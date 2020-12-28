@@ -1,8 +1,12 @@
 require("dotenv").config();
 const spotifyApi = require("../spotify");
 const { google } = require("googleapis");
+const { parse } = require("iso8601-duration");
 
-async function getID(query) {
+async function getYoutubeArtistID(query) {
+  const getLastYear = new Date().getFullYear() - 1;
+  const parsedLastYear = new Date(`${getLastYear}`).toISOString();
+
   try {
     const ids = await google.youtube("v3").search.list({
       key: process.env.API_KEY,
@@ -11,6 +15,8 @@ async function getID(query) {
       q: query,
       maxResults: 5,
       videoDuration: "long",
+      order: "relevance",
+      publishedAfter: parsedLastYear,
     });
     const results = ids.data.items.map((value) => value.id.videoId);
     return results;
@@ -20,11 +26,11 @@ async function getID(query) {
 }
 
 async function getVideosStats(query) {
-  const ids = await getID(query);
+  const ids = await getYoutubeArtistID(query);
   try {
     const getVideo = await google.youtube("v3").videos.list({
       key: process.env.API_KEY,
-      part: ["snippet", "statistics"],
+      part: ["snippet", "contentDetails", "statistics"],
       id: ids,
     });
     const results = getVideo.data.items.map((response) => {
@@ -32,6 +38,7 @@ async function getVideosStats(query) {
         id: response.id,
         title: response.snippet.title,
         published: response.snippet.publishedAt,
+        duration: parse(response.contentDetails.duration),
         fromChannel: response.snippet.channelTitle,
         thumbnails: response.snippet.thumbnails,
         stats: { ...response.statistics },
@@ -66,9 +73,9 @@ module.exports = {
           ...artist,
           followers: artist.followers.total,
           top_tracks: topTracks,
-
           price: "",
-          budget: "",
+          emailManager:"",
+          contactPersonManager:""
         };
       })
     );
@@ -81,7 +88,6 @@ module.exports = {
       const ytQuery = `${req.params.query} live`;
       console.log(ytQuery);
       const result = await getVideosStats(ytQuery);
-      console.log(result);
       return res.send({ status: 200, data: result });
     } catch (err) {
       console.log(err);

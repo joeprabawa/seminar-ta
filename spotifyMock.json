@@ -1,0 +1,269 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/5RbI1PF4n02wWKmgjk7hAE"
+      },
+      "followers": 243439,
+      "genres": ["indonesian indie", "indonesian indie rock", "indonesian pop"],
+      "href": "https://api.spotify.com/v1/artists/5RbI1PF4n02wWKmgjk7hAE",
+      "id": "5RbI1PF4n02wWKmgjk7hAE",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/3b5c00fba4f72eb6eac1101ae77b7dea037611f8",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/0ea8d12088c828f66967cb126f3f71a68c60328e",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/8008be101c5abe5c55d7cd0e60bbdf3c038bb88f",
+          "width": 160
+        }
+      ],
+      "name": "Barasuara",
+      "popularity": 49,
+      "type": "artist",
+      "uri": "spotify:artist:5RbI1PF4n02wWKmgjk7hAE",
+      "top_tracks": [
+        {
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273c68d4c3c88a47cabc0943d35",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02c68d4c3c88a47cabc0943d35",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851c68d4c3c88a47cabc0943d35",
+              "width": 64
+            }
+          ],
+          "release_date": "2015-10-16",
+          "name": "Mengunci Ingatan",
+          "popularity": 49,
+          "album_name": "Taifun"
+        },
+        {
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273c68d4c3c88a47cabc0943d35",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02c68d4c3c88a47cabc0943d35",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851c68d4c3c88a47cabc0943d35",
+              "width": 64
+            }
+          ],
+          "release_date": "2015-10-16",
+          "name": "Sendu Melagu",
+          "popularity": 48,
+          "album_name": "Taifun"
+        },
+        {
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273537ab961922a716c0cda010f",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02537ab961922a716c0cda010f",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851537ab961922a716c0cda010f",
+              "width": 64
+            }
+          ],
+          "release_date": "2020-08-08",
+          "name": "Bangkit Dan Berlari",
+          "popularity": 47,
+          "album_name": "Bangkit Dan Berlari"
+        },
+        {
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273c68d4c3c88a47cabc0943d35",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02c68d4c3c88a47cabc0943d35",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851c68d4c3c88a47cabc0943d35",
+              "width": 64
+            }
+          ],
+          "release_date": "2015-10-16",
+          "name": "Bahas Bahasa",
+          "popularity": 45,
+          "album_name": "Taifun"
+        },
+        {
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273f0f12c51cbe5b86898523067",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02f0f12c51cbe5b86898523067",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851f0f12c51cbe5b86898523067",
+              "width": 64
+            }
+          ],
+          "release_date": "2019-03-08",
+          "name": "Pikiran dan Perjalanan",
+          "popularity": 43,
+          "album_name": "Pikiran dan Perjalanan"
+        },
+        {
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273c68d4c3c88a47cabc0943d35",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02c68d4c3c88a47cabc0943d35",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851c68d4c3c88a47cabc0943d35",
+              "width": 64
+            }
+          ],
+          "release_date": "2015-10-16",
+          "name": "Taifun",
+          "popularity": 42,
+          "album_name": "Taifun"
+        },
+        {
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273f0f12c51cbe5b86898523067",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02f0f12c51cbe5b86898523067",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851f0f12c51cbe5b86898523067",
+              "width": 64
+            }
+          ],
+          "release_date": "2019-03-08",
+          "name": "Guna Manusia",
+          "popularity": 41,
+          "album_name": "Pikiran dan Perjalanan"
+        },
+        {
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273c68d4c3c88a47cabc0943d35",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02c68d4c3c88a47cabc0943d35",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851c68d4c3c88a47cabc0943d35",
+              "width": 64
+            }
+          ],
+          "release_date": "2015-10-16",
+          "name": "Hagia",
+          "popularity": 40,
+          "album_name": "Taifun"
+        },
+        {
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273c68d4c3c88a47cabc0943d35",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02c68d4c3c88a47cabc0943d35",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851c68d4c3c88a47cabc0943d35",
+              "width": 64
+            }
+          ],
+          "release_date": "2015-10-16",
+          "name": "Api dan Lentera",
+          "popularity": 39,
+          "album_name": "Taifun"
+        },
+        {
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273f0f12c51cbe5b86898523067",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02f0f12c51cbe5b86898523067",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851f0f12c51cbe5b86898523067",
+              "width": 64
+            }
+          ],
+          "release_date": "2019-03-08",
+          "name": "Pancarona",
+          "popularity": 37,
+          "album_name": "Pikiran dan Perjalanan"
+        }
+      ],
+      "price": "",
+      "budget": ""
+    }
+  ]
+}
