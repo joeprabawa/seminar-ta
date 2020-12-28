@@ -1,5 +1,8 @@
 ### /GET index
 GET http://localhost:3000/api/v1/search/barasuara
 
+### /GET index youtube
+GET http://localhost:3000/api/v1/search/yt/barasuara
+
 ### / GET Genres
 GET http://localhost:3000/api/v1/genres

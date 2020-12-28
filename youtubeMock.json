@@ -1,0 +1,235 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "id": "1KcWwmdZpY8",
+      "title": "Barasuara Live at Synchronize Fest -  4 oktober 2019",
+      "published": "2020-02-05T12:00:00Z",
+      "duration": {
+        "weeks": 0,
+        "years": 0,
+        "months": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 44,
+        "seconds": 14
+      },
+      "fromChannel": "demajorsTV",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/1KcWwmdZpY8/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/1KcWwmdZpY8/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/1KcWwmdZpY8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/1KcWwmdZpY8/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/1KcWwmdZpY8/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "stats": {
+        "viewCount": "107972",
+        "likeCount": "1902",
+        "dislikeCount": "18",
+        "favoriteCount": "0",
+        "commentCount": "224"
+      }
+    },
+    {
+      "id": "exJVPB5sUhU",
+      "title": "Barasuara - Konser Taifun",
+      "published": "2019-10-22T14:00:14Z",
+      "duration": {
+        "weeks": 0,
+        "years": 0,
+        "months": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 11,
+        "seconds": 46
+      },
+      "fromChannel": "Barasuara",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/exJVPB5sUhU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/exJVPB5sUhU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/exJVPB5sUhU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        }
+      },
+      "stats": {
+        "viewCount": "131067",
+        "likeCount": "4729",
+        "dislikeCount": "35",
+        "favoriteCount": "0",
+        "commentCount": "468"
+      }
+    },
+    {
+      "id": "bNoo-EmRuUs",
+      "title": "Barasuara Live at Synchronizefest 5 Oktober 2018",
+      "published": "2019-05-05T07:22:10Z",
+      "duration": {
+        "weeks": 0,
+        "years": 0,
+        "months": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 51,
+        "seconds": 41
+      },
+      "fromChannel": "demajorsTV",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/bNoo-EmRuUs/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/bNoo-EmRuUs/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/bNoo-EmRuUs/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/bNoo-EmRuUs/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/bNoo-EmRuUs/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "stats": {
+        "viewCount": "116549",
+        "likeCount": "1488",
+        "dislikeCount": "39",
+        "favoriteCount": "0",
+        "commentCount": "236"
+      }
+    },
+    {
+      "id": "8SQgYdzsprU",
+      "title": "Kelompok Penerbang Roket X Barasuara at #Collabonation Concert",
+      "published": "2020-06-28T14:47:06Z",
+      "duration": {
+        "weeks": 0,
+        "years": 0,
+        "months": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 46,
+        "seconds": 0
+      },
+      "fromChannel": "IM3 Ooredoo",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/8SQgYdzsprU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/8SQgYdzsprU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/8SQgYdzsprU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/8SQgYdzsprU/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/8SQgYdzsprU/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "stats": {
+        "viewCount": "109785",
+        "likeCount": "1540",
+        "dislikeCount": "95",
+        "favoriteCount": "0",
+        "commentCount": "107"
+      }
+    },
+    {
+      "id": "OWXZwabjdYI",
+      "title": "PEKANBARU SHOWCASE #002 BARASUARA LIVE CONCERT 2019",
+      "published": "2020-02-19T13:30:12Z",
+      "duration": {
+        "weeks": 0,
+        "years": 0,
+        "months": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 53,
+        "seconds": 6
+      },
+      "fromChannel": "Sanidea",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/OWXZwabjdYI/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/OWXZwabjdYI/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/OWXZwabjdYI/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/OWXZwabjdYI/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        }
+      },
+      "stats": {
+        "viewCount": "2220",
+        "likeCount": "51",
+        "dislikeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "10"
+      }
+    }
+  ]
+}
