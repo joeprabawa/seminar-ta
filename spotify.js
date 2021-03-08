@@ -8,11 +8,24 @@ const spotifyApi = new SpotifyWebApi({
   try {
     const data = await spotifyApi.clientCredentialsGrant();
     const token = data.body["access_token"];
-    console.log(token);
+    const expired = data.body.expires_in
+    console.log(`${token} expired in ${expired}`);
     spotifyApi.setAccessToken(token);
   } catch (err) {
     console.log(err);
   }
 })();
 
-module.exports = spotifyApi;
+const getToken = async () => {
+  try {
+    const data = await spotifyApi.clientCredentialsGrant();
+    const token = data.body["access_token"];
+    const expired = data.body.expires_in
+    console.log(`${token} expired in ${expired}`);
+    spotifyApi.setAccessToken(token);
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+module.exports = {spotifyApi, getToken};

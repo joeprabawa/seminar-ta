@@ -1,8 +1,11 @@
 ### /GET index
-GET http://localhost:3000/api/v1/search/barasuara
+GET http://localhost:3000/api/v1/search/hindia
 
 ### /GET index youtube
-GET http://localhost:3000/api/v1/search/yt/barasuara
+GET http://localhost:3000/api/v1/search/yt/eva celia
 
 ### / GET Genres
 GET http://localhost:3000/api/v1/genres
+
+### / GET Token
+GET  http://localhost:3000/api/v1/token

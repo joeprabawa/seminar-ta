@@ -1,5 +1,5 @@
 require("dotenv").config();
-const spotifyApi = require("../spotify");
+const {spotifyApi} = require("../spotify");
 const { google } = require("googleapis");
 const { parse } = require("iso8601-duration");
 
@@ -14,7 +14,6 @@ async function getYoutubeArtistID(query) {
       type: "video",
       q: query,
       maxResults: 5,
-      videoDuration: "long",
       order: "relevance",
       publishedAfter: parsedLastYear,
     });
@@ -52,50 +51,55 @@ async function getVideosStats(query) {
 
 module.exports = {
   searchArtist: async (req, res) => {
-    const query = req.params.query;
-    const search = await spotifyApi.searchArtists(query, { limit: 5 });
-    const { items } = search.body.artists;
-    const itemsIncTopTracks = await Promise.all(
-      items.map(async (artist) => {
-        const results = await spotifyApi.getArtistTopTracks(artist.id, "ID");
-        const topTracks = results.body.tracks.map((track) => {
-          const { images, release_date, name: album_name } = track.album;
-          const { name, popularity } = track;
+    try {
+      const query = req.params.query;
+      const search = await spotifyApi.searchArtists(query);
+      const { items } = search.body.artists;
+      const itemsIncTopTracks = await Promise.all(
+        items.map(async (artist) => {
+          const results = await spotifyApi.getArtistTopTracks(artist.id, "ID");
+          const topTracks = results.body.tracks.map((track) => {
+            const { images, release_date, name: album_name } = track.album;
+            const { name, popularity } = track;
+            return {
+              images,
+              release_date,
+              name,
+              popularity,
+              album_name,
+            };
+          });
           return {
-            images,
-            release_date,
-            name,
-            popularity,
-            album_name,
+            ...artist,
+            followers: artist.followers.total,
+            top_tracks: topTracks,
+            price: null,
+            emailManager: null,
+            contactPersonManager: null
           };
-        });
-        return {
-          ...artist,
-          followers: artist.followers.total,
-          top_tracks: topTracks,
-          price: "",
-          emailManager:"",
-          contactPersonManager:""
-        };
-      })
-    );
-
-    res.send({ status: 200, data: itemsIncTopTracks });
+        })
+      );
+      res.send({ status: 200, data: itemsIncTopTracks });
+    } catch (error) {
+      res.send({ status: 500, message: 'error', error });
+      next(error)
+    }
   },
 
   searchYoutubeStats: async (req, res) => {
     try {
-      const ytQuery = `${req.params.query} live`;
-      console.log(ytQuery);
+      const ytQuery = `${req.params.query} live concert`;
       const result = await getVideosStats(ytQuery);
       return res.send({ status: 200, data: result });
-    } catch (err) {
-      console.log(err);
+    } catch (error) {
+      console.log(error);
+      return res.send({ status: 500, message: 'error', error });
     }
   },
 
   findArtist: async (req, res) => {
     const artistID = req.params.id;
+    console.log(artistID)
     const artistDetail = await spotifyApi.getArtist(artistID);
     let { body } = artistDetail;
     const artistTopTracks = await spotifyApi.getArtistTopTracks(artistID, "ID");
