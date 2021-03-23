@@ -16,15 +16,17 @@ const spotifyApi = new SpotifyWebApi({
   }
 })();
 
-const getToken = async () => {
+const getToken = async (req, res) => {
   try {
     const data = await spotifyApi.clientCredentialsGrant();
     const token = data.body["access_token"];
     const expired = data.body.expires_in
     console.log(`${token} expired in ${expired}`);
     spotifyApi.setAccessToken(token);
+    return res.send({ status: 200, data: token });
   } catch (err) {
     console.log(err);
+    return res.send({ status: 500, message: 'error', err });
   }
 }
 

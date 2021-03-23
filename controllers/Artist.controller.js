@@ -4,7 +4,7 @@ const { google } = require("googleapis");
 const { parse } = require("iso8601-duration");
 
 async function getYoutubeArtistID(query) {
-  const getLastYear = new Date().getFullYear() - 1;
+  const getLastYear = new Date().getFullYear() - 3;
   const parsedLastYear = new Date(`${getLastYear}`).toISOString();
 
   try {
@@ -99,23 +99,27 @@ module.exports = {
 
   findArtist: async (req, res) => {
     const artistID = req.params.id;
-    console.log(artistID)
-    const artistDetail = await spotifyApi.getArtist(artistID);
-    let { body } = artistDetail;
-    const artistTopTracks = await spotifyApi.getArtistTopTracks(artistID, "ID");
-    const top_tracks = artistTopTracks.body.tracks.map((track) => {
-      const { images, release_date, name: album_name } = track.album;
-      const { name, popularity } = track;
-      return {
-        images,
-        release_date,
-        name,
-        popularity,
-        album_name,
-      };
-    });
-    body = { ...body, top_tracks };
-    res.send({ status: 200, data: body });
+    try {
+      const artistDetail = await spotifyApi.getArtist(artistID);
+      let { body } = artistDetail;
+      const artistTopTracks = await spotifyApi.getArtistTopTracks(artistID, "ID");
+      const top_tracks = artistTopTracks.body.tracks.map((track) => {
+        const { images, release_date, name: album_name } = track.album;
+        const { name, popularity } = track;
+        return {
+          images,
+          release_date,
+          name,
+          popularity,
+          album_name,
+        };
+      });
+      body = { ...body, top_tracks };
+      return res.send({ status: 200, data: body });
+    } catch (error) {
+      console.log(error);
+      return res.send({ status: 500, message: 'error', error });
+    }
   },
 
   searchGenres: async (req, res) => {
